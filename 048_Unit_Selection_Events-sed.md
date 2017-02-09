@@ -26,7 +26,7 @@ StarCraft’s UI offers some help with identifying selection states, as
 shown in the image below. The caption following the image explains each
 state.
 
-![Image](./048_Unit_Selection_Events/image1.png){width="6.5in" height="1.8in"}
+![Image](./048_Unit_Selection_Events/image1.png)
 
 Unit Basic State – Unit Highlighted – Unit Selected & Highlighted – Unit
 Selected
@@ -70,7 +70,7 @@ selection events. In this Unit, navigate to the ‘Unit: Flags’ field and
 double click to launch an ‘Object Values’ window. For an example, see
 the changes made to a stalker in the image below.
 
-![Image](./048_Unit_Selection_Events/image2.png){width="5.25in" height="3.03125in"}
+![Image](./048_Unit_Selection_Events/image2.png)
 
 Altering a Stalker’s Unit: Flags Field
 
@@ -81,7 +81,7 @@ these flags have been unchecked, the unit type will propagate any events
 of their respective type to the Trigger Editor, and should look as they
 do in the image below.
 
-![Image](./048_Unit_Selection_Events/image3.png){width="2.7604166666666665in" height="2.2291666666666665in"}
+![Image](./048_Unit_Selection_Events/image3.png)
 
 Enabling Unit Clicked and Highlighted/UnHighlighted Events for a Unit
 
@@ -93,7 +93,7 @@ where you can tinker with selection events. This will help to build an
 intuitive feel for how selection events arise from a player’s actions.
 The course should appear as follows.
 
-![Image](./048_Unit_Selection_Events/image4.png){width="5.25in" height="3.03125in"}
+![Image](./048_Unit_Selection_Events/image4.png)
 
 Demo Map Course
 
@@ -104,7 +104,7 @@ units are also divided between the player, an allied player, an enemy
 player, and neutral. Move to the Trigger Editor to see how unit
 selection events will be used in this example.
 
-![Image](./048_Unit_Selection_Events/image5.png){width="6.5in" height="2.222916666666667in"}
+![Image](./048_Unit_Selection_Events/image5.png)
 
 Output in Response to a Unit Selection Event
 
@@ -119,7 +119,7 @@ You can explore it by hitting the ‘Test Document’ button in the Editor.
 
 Some illustrative examples of unit selection events are shown below.
 
-![Image](./048_Unit_Selection_Events/image6.png){width="5.90625in" height="2.2708333333333335in"}
+![Image](./048_Unit_Selection_Events/image6.png)
 
 Marauder is Highlighted, then Clicked and Selected
 
@@ -130,7 +130,7 @@ the Editor, but the clicked event will always occur first in any list.
 You can also see that the Marauder’s UI alterations each display a red
 coloring, indicating its status as an enemy.
 
-![Image](./048_Unit_Selection_Events/image7.png){width="5.90625in" height="2.2708333333333335in"}
+![Image](./048_Unit_Selection_Events/image7.png)
 
 Box Selecting all Controlled Units
 
@@ -138,7 +138,7 @@ In this next case, a box selection has been made around the units.
 Despite the units being covered by the box overlay, this alone does not
 trigger any events.
 
-![Image](./048_Unit_Selection_Events/image8.png){width="5.90625in" height="2.2708333333333335in"}
+![Image](./048_Unit_Selection_Events/image8.png)
 
 Stalker, Zealot, and Dark Templar Being Simultaneously Selected
 
@@ -146,7 +146,7 @@ Releasing the box selection results in all units belonging to the player
 being selected at once. Each unit individually triggers a Unit Selected
 event, then proceeds to a Selected state.
 
-![Image](./048_Unit_Selection_Events/image9.png){width="6.072916666666667in" height="1.5833333333333333in"}
+![Image](./048_Unit_Selection_Events/image9.png)
 
 Repeated Clicking of the Lyote
 
