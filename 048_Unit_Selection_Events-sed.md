@@ -7,17 +7,12 @@ changes in the state of a Unit that occur in response to the mouse
 actions of a Player. There are three types of change, which are broken
 down in the table below.
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Event               Details
-  ------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Unit Selected       Triggers the first time a Player clicks on the Unit, this selects the Unit. The Unit now enters its Selected state. Once the Unit is in this state, it cannot be selected again until it is deselected by the Player and returns to its Basic State. A unit may also be deselected when the Player selects any other game entity. A Player may select many units with a single action either by using a box select with the mouse or holding the CTRL key while clicking a unit.
-
-  Unit Clicked        Triggers every time the Unit is clicked with the mouse by a Player. Can occur indefinitely. The first click on a deselected Unit meets the criteria for both a Unit Clicked event and a Unit Selected event. A Player may only click on a single unit at a time.
-
-  Unit Highlighted/   The highlighted and unhighlighted events trigger is based on the mouse position of the Player as it enters or leaves the area of the Unit respectively. When the mouse pointer first crosses the area of the Unit, the unit triggers its Unit Highlighted event and becomes Highlighted. When the mouse pointer leaves the area of the Highlighted unit, the unit triggers its Unit UnHighlighted event, returning to its Basic state. A Player can only highlight a single unit at a time.
-                      
-  UnHighlighted       
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Event        | Details        |
+| ------------ | -------------- | 
+| Unit Selected | Triggers the first time a Player clicks on the Unit, this selects the Unit. The Unit now enters its Selected state. Once the Unit is in this state, it cannot be selected again until it is deselected by the Player and returns to its Basic State. A unit may also be deselected when the Player selects any other game entity. A Player may select many units with a single action either by using a box select with the mouse or holding the CTRL key while clicking a unit. |
+| Unit Clicked | Triggers every time the Unit is clicked with the mouse by a Player. Can occur indefinitely. The first click on a deselected Unit meets the criteria for both a Unit Clicked event and a Unit Selected event. A Player may only click on a single unit at a time. |
+| Unit Highlighted/UnHighlighted |   The highlighted and unhighlighted events trigger is based on the mouse position of the Player as it enters or leaves the area of the Unit respectively. When the mouse pointer first crosses the area of the Unit, the unit triggers its Unit Highlighted event and becomes Highlighted. When the mouse pointer leaves the area of the Highlighted unit, the unit triggers its Unit UnHighlighted event, returning to its Basic state. A Player can only highlight a single unit at a time. |
+    
 
 SELECTION STATES
 ----------------
@@ -41,7 +36,7 @@ the mouse pointer is altered to a targeting reticle and the unit is
 marked with a dashed circle. The color of the circle depends on the
 unit’s owner, for a unit belonging to the player it is green, for an
 allied or neutral unit it is yellow, and for an enemy unit it is red.
-
+ 
 In the third picture from the left, the unit has been clicked for the
 first time, the unit is now Selected. This change results in the both
 the Unit Selected and Unit Clicked events triggering. A Selected unit’s
